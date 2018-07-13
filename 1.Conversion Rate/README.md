@@ -528,7 +528,7 @@ plt.hist(dataset["age"],density=True)
 
 
 
-![png](output_14_1.png)
+![png](./figures/output_14_1.png)
 
 
 
@@ -642,7 +642,7 @@ sns.distplot(dataset["age"], bins=10, kde=True)
 
 
 
-![png](output_19_1.png)
+![png](./figures/output_19_1.png)
 
 
 
@@ -658,7 +658,7 @@ sns.countplot(x='age', data=dataset)
 
 
 
-![png](output_20_1.png)
+![png](./figures/output_20_1.png)
 
 
 针对每个字段，清洗该字段的数据，并且跟`convertion rate`做个比较
@@ -743,7 +743,7 @@ plt.show()
 ```
 
 
-![png](output_24_0.png)
+![png](./figures/output_24_0.png)
 
 
 
@@ -759,7 +759,7 @@ sns.pointplot(x="age", y="mean", data=convertion_rate_by_age)
 
 
 
-![png](output_25_1.png)
+![png](./figures/output_25_1.png)
 
 
 
@@ -856,7 +856,7 @@ dataset.groupby("country").size().plot.pie(figsize=(5, 5))
 ```
 
 
-![png](output_27_0.png)
+![png](./figures/output_27_0.png)
 
 
 
@@ -867,7 +867,7 @@ dataset.groupby("country").size().plot.pie(figsize=(5, 5))
 
 
 
-![png](output_27_2.png)
+![png](./figures/output_27_2.png)
 
 
 
@@ -883,7 +883,7 @@ sns.countplot(x="country", hue="converted", data=dataset)
 
 
 
-![png](output_28_1.png)
+![png](./figures/output_28_1.png)
 
 
 上图显示了每个国家的用户转化数，然而有些信息就是明明摆在面前…有时候就是看不到……<br/>
@@ -911,7 +911,7 @@ sns.barplot(x="country", y ="mean", data=convertion_rate_by_country)
 
 
 
-![png](output_30_2.png)
+![png](./figures/output_30_2.png)
 
 
 
@@ -927,7 +927,7 @@ sns.countplot(x="new_user", hue="converted", data=dataset)
 
 
 
-![png](output_31_1.png)
+![png](./figures/output_31_1.png)
 
 
 
@@ -938,7 +938,7 @@ dataset.groupby("source").size().plot.pie(figsize=(5, 5))
 ```
 
 
-![png](output_32_0.png)
+![png](./figures/output_32_0.png)
 
 
 
@@ -949,7 +949,7 @@ dataset.groupby("source").size().plot.pie(figsize=(5, 5))
 
 
 
-![png](output_32_2.png)
+![png](./figures/output_32_2.png)
 
 
 
@@ -965,7 +965,7 @@ sns.countplot(x="source", hue="converted", data=dataset)
 
 
 
-![png](output_33_1.png)
+![png](./figures/output_33_1.png)
 
 
 
@@ -989,7 +989,7 @@ sns.barplot(x="source", y ="mean", data=convertion_rate_by_source)
 
 
 
-![png](output_34_2.png)
+![png](./figures/output_34_2.png)
 
 
 
@@ -1005,7 +1005,7 @@ sns.countplot(x='total_pages_visited', data=dataset)
 
 
 
-![png](output_35_1.png)
+![png](./figures/output_35_1.png)
 
 
 
@@ -1053,7 +1053,7 @@ plt.show()
 ```
 
 
-![png](output_37_0.png)
+![png](./figures/output_37_0.png)
 
 
 
@@ -1069,7 +1069,7 @@ sns.pointplot(x="total_pages_visited", y="mean", data=convertion_rate_by_visit)
 
 
 
-![png](output_38_1.png)
+![png](./figures/output_38_1.png)
 
 
 
@@ -1085,7 +1085,7 @@ dataset.groupby("new_user").size().plot.pie(figsize=(5, 5))
 
 
 
-![png](output_39_1.png)
+![png](./figures/output_39_1.png)
 
 
 经过最初步的分析，现在已经可以确定转化率会受到`total visited pages`, `age`, `country (China)`的影响。<br/>
@@ -1391,7 +1391,7 @@ sns.barplot(x = rf.feature_importances_, y = X_train.columns)
 
 
 
-![png](output_56_1.png)
+![png](./figures/output_56_1.png)
 
 
 显然转化率会受到`total_pages_visited`的影响，然而这个字段本身并不是一个可以调控的属性…<br>
@@ -1449,7 +1449,7 @@ sns.barplot(x = rf2.feature_importances_, y=X_train.columns)
 
 
 
-![png](output_63_1.png)
+![png](./figures/output_63_1.png)
 
 
 但是模型的可解释性却增强了
