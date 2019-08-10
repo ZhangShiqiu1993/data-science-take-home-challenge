@@ -1,10 +1,8 @@
-# data-science-take-home-challenge
+## 数据竞赛实战训练
 
----
+#### data-science-take-home-challenge
 
-### My solution to *A Collection of Data Science Take-Home Challenges*
-
-![take home challenges](./takehome_challenges.jpg)
+![take home challenges](./assets/takehome_challenges.jpg)
 
 + [ ] 1. Conversion Rate
 + [ ] 2. Spanish Translation A/B Test
@@ -26,7 +24,3 @@
 + [ ] 18. On-Line Video Challenge
 + [ ] 19. Subscription Retention Rate
 + [ ] 20. Ads Analysis
-
----
-
-![pic](./点赞.jpeg)
